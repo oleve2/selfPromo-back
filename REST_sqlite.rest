@@ -1,0 +1,18 @@
+
+@url = http://localhost:7777
+
+### sqlite test crap
+GET {{url}}/test_crap
+Content-Type: application/json
+
+### articles GET
+GET {{url}}/articles
+Content-Type: application/json
+
+### articles by ID GET
+GET {{url}}/articles/2
+Content-Type: application/json
+
+### reviews GET
+GET {{url}}/reviews
+Content-Type: application/json

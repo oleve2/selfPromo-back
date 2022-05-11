@@ -1,0 +1,34 @@
+
+@url = http://localhost:7777
+
+### homepage
+GET {{url}}/
+
+### ---------------------------------------------------------
+### posts get
+GET {{url}}/posts
+Content-Type: application/json
+
+### posts post
+POST {{url}}/posts
+Content-Type: application/json
+
+{
+  "topic": "new topic",
+  "contents": "new contents"
+}
+
+### posts update
+PUT {{url}}/posts
+Content-Type: application/json
+
+{
+  "id": 5,
+  "topic": "new topic updated",
+  "contents": "new contents updated"
+}
+
+### posts delete
+DELETE {{url}}/posts/6
+Content-Type: application/json
+

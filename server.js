@@ -72,6 +72,7 @@ router.delete('/posts/:id', handlers.postsDelete);
 
 // sqlite urls // handlers_sqlite.testCrap
 //router.get('/test_crap',    handlers_sqlite.testCrap);
+router.get('/echo',         handlers_sqlite.echo);
 router.get('/articles',     handlers_sqlite.getArticles);
 router.get('/articles/:id', handlers_sqlite.getArticlesById);
 router.get('/reviews',      handlers_sqlite.getReviews);

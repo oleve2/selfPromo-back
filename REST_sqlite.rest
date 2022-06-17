@@ -1,5 +1,10 @@
 
-@url = http://localhost:7777
+#@url = http://localhost:7777
+@url = https://selfpromo-back.herokuapp.com
+
+### echo
+GET {{url}}/echo
+Content-Type: application/json
 
 ### sqlite test crap
 GET {{url}}/test_crap

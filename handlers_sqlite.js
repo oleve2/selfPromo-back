@@ -111,6 +111,13 @@ const DataReviewsComments = (dbs) => {
   })   
 }
 
+const echo = async (ctx) => {
+  console.log('inside echo');
+  ctx.body = {msg: 'echo'};
+  return;
+}
+
+
 
 
 
@@ -119,3 +126,5 @@ const DataReviewsComments = (dbs) => {
 exports.getArticles = getArticles;
 exports.getArticlesById = getArticlesById;
 exports.getReviews = getReviews;
+exports.echo = echo;
+
